@@ -1,0 +1,28 @@
+.wrap {
+  width: 60%;
+  height: 100px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: #00bfa5;
+  fill-opacity: 0.5;
+}
+
+.icon:hover {
+  fill-opacity: 1;
+}
+
+
