@@ -17,6 +17,9 @@ var config = {
         scss: {
           dest: '../../../scss/_sprite.scss'
         }
+      },
+      example: {
+        dest: '../tmp/spriteSvgDemo.html' // демо html
       }
     }
   }
@@ -37,7 +40,9 @@ gulp.task('svgSpriteBuild', function() {
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },
-      parserOptions: { xmlMode: true }
+      parserOptions: {
+        xmlMode: true
+      }
     }))
     // cheerio плагин заменит, если появилась, скобка '&gt;', на нормальную.
     .pipe(replace('&gt;', '>'))
