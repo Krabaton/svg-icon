@@ -4,7 +4,7 @@ var gulp = require("gulp"),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync').create();
 //------------------------------------------/
-var svgSprite = require('gulp-svg-sprite'),
+var svgSprite = require('gulp-svg-sprites'),
   svgmin = require('gulp-svgmin'),
   cheerio = require('gulp-cheerio'),
   replace = require('gulp-replace');
